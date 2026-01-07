@@ -13,8 +13,10 @@ export interface GameState {
 }
 
 export interface UserProfile {
-  balance: number;
+  id: string;
   username: string;
+  password?: string; // Chỉ dùng để lưu trữ local
+  balance: number;
   avatar: string;
   gamesPlayed: number;
   gamesWon: number;
